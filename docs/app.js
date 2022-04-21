@@ -6,16 +6,16 @@ function random(){
 
 function start(){
     document.getElementById("res").innerHTML="Loading";
-    var t1 = document.getElementById('t1').value;
-    var t2 = document.getElementById('t2').value;
-    var t3 = document.getElementById('t3').value;
-    var t4 = document.getElementById('t4').value;
-    var t5 = document.getElementById('t5').value;
-    var k1 = document.getElementById('k1').value;
-    var k2 = document.getElementById('k2').value;
-    var k3 = document.getElementById('k3').value;
-    var k4 = document.getElementById('k4').value;
-    var k5 = document.getElementById('k5').value;
+    var t1 = document.getElementById('t1').value.toLowerCase();
+    var t2 = document.getElementById('t2').value.toLowerCase();
+    var t3 = document.getElementById('t3').value.toLowerCase();
+    var t4 = document.getElementById('t4').value.toLowerCase();
+    var t5 = document.getElementById('t5').value.toLowerCase();
+    var k1 = document.getElementById('k1').value.toLowerCase();
+    var k2 = document.getElementById('k2').value.toLowerCase();
+    var k3 = document.getElementById('k3').value.toLowerCase();
+    var k4 = document.getElementById('k4').value.toLowerCase();
+    var k5 = document.getElementById('k5').value.toLowerCase();
 
     if(t1 || t2 || t3 || t4 || t5) check(t1, t2, t3, t4, t5, k1, k2, k3, k4, k5);
     else if(k1 || k2 || k3 || k4 || k5) check(t1, t2, t3, t4, t5, k1, k2, k3, k4, k5);
@@ -93,32 +93,32 @@ function sort(){
 }
 
 function sortWo(arr){
-var m1 = document.getElementById('m1').value;
-var m2 = document.getElementById('m2').value;
-var m3 = document.getElementById('m3').value;
-var m4 = document.getElementById('m4').value;
-var m5 = document.getElementById('m5').value;
-var m6 = document.getElementById('m6').value;
-var m7 = document.getElementById('m7').value;
-var m8 = document.getElementById('m8').value;
-var m9 = document.getElementById('m9').value;
-var m10 = document.getElementById('m10').value;
-var m11 = document.getElementById('m11').value;
-var m12 = document.getElementById('m12').value;
-var m13 = document.getElementById('m13').value;
-var m14 = document.getElementById('m14').value;
-var m15 = document.getElementById('m15').value;
-var m16 = document.getElementById('m16').value;
-var m17 = document.getElementById('m17').value;
-var m18 = document.getElementById('m18').value;
-var m19 = document.getElementById('m19').value;
-var m20 = document.getElementById('m20').value;
-var m21 = document.getElementById('m21').value;
-var m22 = document.getElementById('m22').value;
-var m23 = document.getElementById('m23').value;
-var m24 = document.getElementById('m24').value;
-var m25 = document.getElementById('m25').value;
-var m26 = document.getElementById('m26').value;
+var m1 = document.getElementById('m1').value.toLowerCase();
+var m2 = document.getElementById('m2').value.toLowerCase();
+var m3 = document.getElementById('m3').value.toLowerCase();
+var m4 = document.getElementById('m4').value.toLowerCase();
+var m5 = document.getElementById('m5').value.toLowerCase();
+var m6 = document.getElementById('m6').value.toLowerCase();
+var m7 = document.getElementById('m7').value.toLowerCase();
+var m8 = document.getElementById('m8').value.toLowerCase();
+var m9 = document.getElementById('m9').value.toLowerCase();
+var m10 = document.getElementById('m10').value.toLowerCase();
+var m11 = document.getElementById('m11').value.toLowerCase();
+var m12 = document.getElementById('m12').value.toLowerCase();
+var m13 = document.getElementById('m13').value.toLowerCase();
+var m14 = document.getElementById('m14').value.toLowerCase();
+var m15 = document.getElementById('m15').value.toLowerCase();
+var m16 = document.getElementById('m16').value.toLowerCase();
+var m17 = document.getElementById('m17').value.toLowerCase();
+var m18 = document.getElementById('m18').value.toLowerCase();
+var m19 = document.getElementById('m19').value.toLowerCase();
+var m20 = document.getElementById('m20').value.toLowerCase();
+var m21 = document.getElementById('m21').value.toLowerCase();
+var m22 = document.getElementById('m22').value.toLowerCase();
+var m23 = document.getElementById('m23').value.toLowerCase();
+var m24 = document.getElementById('m24').value.toLowerCase();
+var m25 = document.getElementById('m25').value.toLowerCase();
+var m26 = document.getElementById('m26').value.toLowerCase();
 var maShe=[m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26];
 maShe = maShe.filter(Boolean);
 var done=[];
